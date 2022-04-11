@@ -45,10 +45,10 @@ print(basket)# show that duplicates have been removed
 a = set('abracadabra')
 b = set('alacazam')
 a # unique letters in a
-a - b # letters in a but not in b
-a | b # letters in a or b or both
-a & b # letters in both a and b
-a ^ b # letters in a or b but not both
+a - b # letters in a but not in b; a.difference(b)
+a | b # letters in a or b or both; a.union(b)
+a & b # letters in both a and b; a.intersection(b)
+a ^ b # letters in a or b but not both; a.symmetric_difference(b)
 
 
 #Set comprehension
